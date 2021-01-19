@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /*
-// 주사위 함수
+// 주사위 말머리 함수
 void dice(int num)
 {
     printf("용용이가 던진 주사위: %d\n", num);
