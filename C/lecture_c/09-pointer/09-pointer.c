@@ -5,8 +5,8 @@
 int main(void)
 {
     int a = 5;
-    int *b = &a;
-    printf("%d\n", *b);
+    int *b = &a;        // 여기 *b 의 *
+    printf("%d\n", *b); // 여기 *b 의 * 은 다르다.
     return 0;
 }
 */
