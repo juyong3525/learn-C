@@ -21,6 +21,20 @@ int main(void)
 }
 */
 
+/*
+//입력 버퍼로 인해 흔히 발생하는 오류
+int main(void)
+{
+    int a;
+    char c;
+    scanf("%d", &a);
+    printf("%d\n", a);
+    scanf("%c", &c);
+    printf("%c\n", c);
+    return 0;
+}
+*/
+
 // 입력 버퍼 오류 해결
 int main(void)
 {
