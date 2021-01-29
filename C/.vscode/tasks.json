@@ -24,7 +24,7 @@
         },
         {
             "type": "shell",
-            "label": "Run C source code",
+            "label": "Run C/C++ source code",
             "command": "./${fileBasenameNoExtension}",
             "options": {
                 "cwd": "${fileDirname}"
