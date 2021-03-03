@@ -2,9 +2,13 @@
 
 int main(void)
 {
-    for (int i = 1; i <= 10; ++i)
+    int i = 10, hap = 0;
+    while (i > 1)
     {
-        printf("%d\n", i);
+        i--;
+        if (i % 3 == 1)
+            hap += i;
     }
+    printf("%d\n", hap);
     return 0;
 }
