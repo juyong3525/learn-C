@@ -34,34 +34,24 @@ int main(void)
     // 초기화
     int **p = (int **)malloc(sizeof(int *) * 3);
     for (int i = 0; i < 3; i++)
-    {
         *(p + i) = (int *)malloc(sizeof(int) * 3);
-    }
 
     // 2차원 배열의 각각의 원소에 값 넣기
     for (int i = 0; i < 3; i++)
-    {
         for (int j = 0; j < 3; j++)
-        {
             *(*(p + i) + j) = i * 3 + j; // *(*(p + i) + j) = p[i][j]
-        }
-    }
 
     // 2차원 배열의 각각의 원소 출력
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
-        {
             printf("%d ", *(*(p + i) + j));
-        }
         printf("\n");
     }
 
     // 동적 메모리 반환
     for (int i = 0; i < 3; i++)
-    {
         free(*(p + i));
-    }
 
     return 0;
 }
