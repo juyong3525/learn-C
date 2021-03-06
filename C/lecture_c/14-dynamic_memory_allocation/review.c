@@ -14,7 +14,7 @@ int main(void)
     for (int i = 0; i < 4; i++)
     {
         for (int j = 0; j < 3; j++)
-            printf("%d ", *(*(p + i) + j));
+            printf("%10d", *(*(p + i) + j));
         printf("\n");
     }
 
